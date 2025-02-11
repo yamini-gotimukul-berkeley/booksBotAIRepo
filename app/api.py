@@ -58,7 +58,8 @@ logger.info('API is starting up')
 
 origins = [
     "http://localhost:5173",
-    "localhost:5173"
+    "localhost:5173",
+    "https://react-bookbot-ai.onrender.com"
 ]
 
 app.add_middleware(
