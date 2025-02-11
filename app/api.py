@@ -194,7 +194,7 @@ def search_books_by_query(query, limit):
             book["summary"] = "Summary not available"
          
         if("cover_i" in book):
-            book["cover_image_url"]="https://covers.openlibrary.org/b/id/"+str(book["cover_i"])+"-L.jpg"
+            book["cover_image_url"]="https://covers.openlibrary.org/b/id/"+str(book["cover_i"])+"-M.jpg"
         else:
             book["cover_image_url"]="https://covers.openlibrary.org/b/id/nocover-M.jpg"
     
