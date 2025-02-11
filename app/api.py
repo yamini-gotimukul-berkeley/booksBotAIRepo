@@ -40,7 +40,7 @@ TEN_MINUTES = 600 ###10 minutes
 
 app = FastAPI(title='api')
 
-load_dotenv(dotenv_path=Path(os.path.abspath(os.path.join(os.path.dirname(__file__),"../../.env"))))
+load_dotenv(dotenv_path=Path(os.path.abspath(os.path.join(os.path.dirname(__file__),"../.env"))))
 
 profanity_filter = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
