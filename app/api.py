@@ -221,8 +221,8 @@ async def add_book(book: dict) -> dict:
 async def summarize_books(request: Request):
     logger.info("Summarizing books ..")
     req = await request.json()
-    logger.info(f"Title: {req["title"]}")
-    logger.info(f"Authors: {req["authors"]}")
+    logger.info(req["title"])
+    logger.info(req["authors"])
     return {
        "summary":get_book_summary(req["title"], req["authors"] )
     }    
